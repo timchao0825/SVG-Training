@@ -1,0 +1,21 @@
+extends _layout
+block page_title
+  title AOS Training
+block style
+  link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css")
+  link(rel="stylesheet", href="css/index.min.css")
+block script
+  script(type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js")
+  script(type="text/javascript" src="js/aos.min.js")
+block content
+  section.aos
+    .space
+    .box(data-aos="fade-up")
+        span fadeup box
+    .space
+    .box(data-aos="custom-animate1")
+        span fadeup box
+    .space
+    .box(data-aos="fade-right")
+        span fadeup box
+    .space

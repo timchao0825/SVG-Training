@@ -11,7 +11,6 @@ section.svg{
   border:2px solid red;
   justify-content: center;
   align-items: center;
-
 }
 
 svg{
@@ -21,6 +20,32 @@ svg{
   height: 300px;
 }
 
+section.aos{
+  border:2px solid red;
+  .space{
+    height:600px;
+    clear:both;
+    border:2px solid green;
+  }
+  .box{
+    border:2px solid blue;
+    height: 200px;
+    width: 500px;
+    margin:20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  [data-aos="custom-animate1"] {
+    transform: skewX(45deg);
+    opacity: 0;
+    transition-property: transform, opacity;
+    &.aos-animate {
+      transform: skewX(0);
+      opacity: 1;
+    }
+  }
+}
 
 // --------------------------------------------------------
 /* Animate Style*/
